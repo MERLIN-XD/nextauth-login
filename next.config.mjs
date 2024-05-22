@@ -1,0 +1,28 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    typescript: {
+        // !! WARN !!
+        // Dangerously allow production builds to successfully complete even if
+        // your project has type errors.
+        // !! WARN !!
+        ignoreBuildErrors: true,
+    },
+    reactStrictMode: true,
+    swcMinify: true,
+  
+    output: 'standalone',
+    distDir: ".next",
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "**",
+        },
+      ],
+    },
+};
+
+export default nextConfig;
