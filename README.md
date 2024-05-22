@@ -2,11 +2,31 @@
 
 First, run the development server:
 
+
+#installs
 ```bash
+# use npm
 npm run install
-# or
-npm run dev
+
+# use yarn
+yarn install
+or just
+yarn
 ```
+
+#Start Project
+```bash
+# use npm
+npm run dev
+# or
+npm run build & npm run start
+
+# use yarn
+yarn dev
+or just
+yarn build & yarn start
+```
+
 and it should open at
 
 > http://localhost:3000/
